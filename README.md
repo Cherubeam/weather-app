@@ -4,36 +4,54 @@ A small weather app written for node.js as part of the Udemy course _»The Compl
 ## Installation
 1. [Click here](https://darksky.net/dev "Dark Sky API") and sign up for a free account.
 2. After copy the Dark Sky API secrets to the _secrets-dummy.js_ file.
-3. Rename _secrets-dummy.js_ to _secrets.js_ to get the app work properly.
+3. Rename _secrets-dummy.js_ to _secrets.js_ to get the app working properly.
 4. If needed you can adapt the request url within 'weather.js' file according the [documentation](https://darksky.net/dev/docs#/dev/docs#api-request-types "API Request Types") to fit your needs.
 
 ## CLI Commands
 ### Search for an address
 *Request*
-	node app.js -a '1301 lombard street'
+```
+node app.js -a '1301 lombard street'
+```
 or
-	node app.js -address '1301 lombard street'
+```
+node app.js -address '1301 lombard street'
+```
 
 *Response*
-	1301 Lombard St, Philadelphia, PA 19147, USA
-	It's currently 32.67°C. It feels like 32.67°C.
+```
+1301 Lombard St, Philadelphia, PA 19147, USA
+It's currently 32.67°C. It feels like 32.67°C.
+```
 
 ### Search for a zip code
 *Request*
-	node app.js -a 19147
+```
+node app.js -a 19147
+```
 or
-	node app.js -address 19147
+```
+node app.js -address 19147
+```
 
 *Response*
-	Philadelphia, PA 19147, USA
-	It's currently 32.91°C. It feels like 32.91°C.
+```
+Philadelphia, PA 19147, USA
+It's currently 32.91°C. It feels like 32.91°C.
+```
 
 ### Search for a city
 *Request*
-	node app.js -a Philadelphia
+```
+node app.js -a Philadelphia
+```
 or
-	node app.js -address Philadelphia
+```
+node app.js -address Philadelphia
+```
 
 *Response*
-	Philadelphia, PA, USA
-	It's currently 32.67°C. It feels like 32.67°C.
+```
+Philadelphia, PA, USA
+It's currently 32.67°C. It feels like 32.67°C.
+```
